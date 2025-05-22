@@ -26,7 +26,7 @@ export async function POST(req: Request) {
 
     return new Response(text);
   } catch (error) {
-    console.error("Error generating content:", error);
+    // console.error("Error generating content:", error);
     return NextResponse.json(
       { error: "Failed to generate content" },
       { status: 500 }
